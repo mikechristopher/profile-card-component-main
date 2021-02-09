@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+.attribution { font-size: 11px; text-align: center; color: hsl(0, 0%, 100%);}
+.attribution a { color: hsl(0, 0%, 100%); }
+
+:root {
+    --darkcyan: hsl(185, 75%, 39%);
+    --darkblue: hsl(229, 23%, 23%);
+    --greyblue: hsl(227, 10%, 46%);
+    --darkgrey: hsl(0, 0%, 59%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 18px;
+    font-family: Kumbh Sans, sans-serif;
+    background-color: var(--darkcyan);
+    background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: -240px -500px, 740px 370px ;
+}
+
+.container {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    width: 350px;
+    margin: auto;
+}
+
+
+.card {
+    background-color: #ffffff; 
+    height: 375px;
+    border-radius: 15px;
+    width: 375px;
+}
+.cardhead {
+    background-image: url("./images/bg-pattern-card.svg");
+    height: 140px;
+    border-radius: 15px 15px 0 0;
+}
+img {
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    justify-content: center;
+    position: relative;
+    top: 85px; left: 130px; bottom: 0px; 
+
+}
+.cardbody {
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+}
+
+.carddetail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3.main {
+    color: var(--darkblue);
+    font-size: 18px;
+    padding: 0.3rem;
+}
+p.age {
+    color: var(--greyblue);
+    font-size: 18px;
+    padding: 0.3rem;
+}
+.city {
+    display: flex;
+    justify-content: center;
+    color: var(--greyblue);
+    font-size: 14px;
+    padding: 0.3rem;
+}
+hr {
+    color: var(--darkgrey);
+    margin: 1.2rem 0;
+    opacity: 30%;
+
+}
+.socialdetail {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.sdmain {
+    color: var(--greyblue);
+}
+.sub {
+    color: var(--greyblue);
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        background-position: -700px -600px, 180px 350px;
+    }
+}
